@@ -1,19 +1,17 @@
 package com.example
 
-import io.micronaut.runtime.Micronaut.*
-import io.swagger.v3.oas.annotations.*
-import io.swagger.v3.oas.annotations.info.*
+import io.micronaut.runtime.Micronaut.run
+import io.swagger.v3.oas.annotations.OpenAPIDefinition
+import io.swagger.v3.oas.annotations.info.Info
 
 @OpenAPIDefinition(
     info = Info(
-            title = "microservice1",
-            version = "0.0"
-    )
+        title = "microservice1",
+        version = "0.0",
+    ),
 )
-object Api {
-}
+object Api
 
 fun main(args: Array<String>) {
-	run(*args)
+    run(*args)
 }
-
